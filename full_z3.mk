@@ -26,8 +26,12 @@ $(call inherit-product, device/sony/common/resources.mk)
 $(call inherit-product, device/sony/z3/z3.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_z3
+PRODUCT_NAME := pa_z3
 PRODUCT_DEVICE := z3
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_MODEL := Xperia Z3
+
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=D6603
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=Sony/D6603/D6603:5.0.2/23.1.A.1.28/151083418:user/release-keys
+PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="D6603-user 5.0.2 23.1.A.1.28 151083418 release-keys"
